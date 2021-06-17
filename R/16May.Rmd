@@ -1,0 +1,21 @@
+---
+title: "16May"
+author: "Eshaan"
+date: "16/05/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,message = FALSE)
+```
+## Extrovert Rating
+The extrovert status makes little difference in employee productivity
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+emp_sim = read_csv('emp_sim.csv')
+ext_levels = c('LOW','MED','HIGH')
+emp_sim = emp_sim %>% mutate(ext_factors = factor(extrovert, levels = ext_levels))
+qplot(ext_factors,revenue, data = emp_sim, geom = 'violin')
+```

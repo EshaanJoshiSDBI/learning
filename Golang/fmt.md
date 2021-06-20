@@ -9,7 +9,7 @@
 - `%o` base 8
 - `%d` base 10
 - `%x` base 16
-- `%X% base 16 with capital letters
+- `%X%` base 16 with capital letters
 ## Float
 - `%e` exponent
 - `%f / %F` decimal no exponent

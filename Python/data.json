@@ -1,0 +1,12 @@
+{
+    "firstname":"Eshaan",
+    "lastname":"Joshi",
+    "gender":"Male",
+    "age":19,
+    "address":{
+        "street":"Chincholi bunder",
+        "city":"Mumbai",
+        "state":"Maharashtra"
+    },
+    "phonenumber": 12345678910
+}
